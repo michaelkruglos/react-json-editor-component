@@ -11,8 +11,8 @@ type DemoProps = {
 }
 
 class Demo extends React.Component<DemoProps, DemoState> {
-  constructor() {
-    super();
+  constructor(props: DemoProps) {
+    super(props);
     this.onChangeKeyValue = this.onChangeKeyValue.bind(this);
     this.state = {
       demoObject: {

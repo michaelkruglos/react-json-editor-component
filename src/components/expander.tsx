@@ -12,9 +12,9 @@ export type ExpanderProps = {
 }
 
 export class Expander extends React.Component<ExpanderProps, ExpanderState> {
-  constructor({expanded}: ExpanderProps) {
-    super();
-    this.state = { expanded: expanded };
+  constructor(props: ExpanderProps) {
+    super(props);
+    this.state = { expanded: props.expanded };
   }
 
   render() {

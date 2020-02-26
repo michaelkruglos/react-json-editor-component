@@ -21,6 +21,6 @@ export const ComponentByType = ({ value, onChange }: ComponentByTypeProps) => {
     case 'Array': return <ArrayComponent value={value} onChange={onChange} />;
     case 'Boolean': return <BooleanComponent value={value} onChange={onChange} />;
     case 'Null': return <NullComponent value={value} onChange={onChange} />;
-    default: return <div>{`Unimplemented component ${type}`}</div>;
+    default: return <div>{`Invalid type ${type} for JSON`}</div>;
   }
 }

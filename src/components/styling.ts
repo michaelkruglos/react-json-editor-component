@@ -1,4 +1,5 @@
-import Glamorous , {CSSProperties, GlamorousComponent } from 'glamorous';
+import styled from "@emotion/styled";
+import { css } from "@emotion/core";
 
 const propStyles = (styles: any) =>
   (props: { [k: string]: any }) =>
@@ -18,22 +19,8 @@ const colors = {
   expanderBackgroundColor: 'silver',
 }
 
-const flex: CSSProperties = {
-  display: 'flex',
-} 
-
-const flexRow: CSSProperties = {
-  ...flex,
-  flexDirection: 'row',
-}
-
-const flexColumn: CSSProperties = {
-  ...flex,
-  flexDirection: 'column',
-}
-
-const valueContainer: CSSProperties =  {
-  ...flex,
+const valueContainer = css({
+  display: "flex",
   padding: '5px 7px',
   margin: '2px',
   borderRadius: '5px',
@@ -41,10 +28,10 @@ const valueContainer: CSSProperties =  {
   fontFamily: 'monospace',
   fontSize: '12pt',
   cursor: 'pointer',
-}
+});
 
-const objectContainer: CSSProperties = {
-  ...flex,
+const objectContainer = css({
+  display: "flex",
   flexDirection: 'column',
   padding: '1vmin',
   borderColor: colors.elementBorder,
@@ -52,61 +39,61 @@ const objectContainer: CSSProperties = {
   borderWidth: '2px',
   borderRadius: '5px',
   backgroundColor: colors.containerBackground,
-};
+});
 
-const arrayContainer: CSSProperties = {
+const arrayContainer = css({
   ...objectContainer,
   borderRadius: '2px',
-}
+});
 
-const keyValueContainer: CSSProperties = {
+const keyValueContainer = css({
   borderRadius: 5,
   borderWidth: 5,
   borderColor: colors.elementBorder,
   display: 'flex',
   alignItems: 'flex-start',
   flexDirection: 'row',
-}
+});
 
-const expanderButton: CSSProperties = {
+const expanderButton = css({
   cursor: 'pointer',
-  ...flex,
+  display: "flex",
   width: '0px',
   height: '0px',
-}
+});
 
-const triangleLeft: CSSProperties = {
+const triangleLeft = css({
   borderLeft: `10px solid ${colors.expanderColor}`,
   borderTop: '5px solid transparent',
   borderBottom: '5px solid transparent',
-}
+});
 
-const triangleDown: CSSProperties = {
+const triangleDown = css({
   borderTop: `10px solid ${colors.expanderColor}`,
   borderRight: '5px solid transparent',
   borderLeft: '5px solid transparent',
-}
+});
 
-const expanderContainer: CSSProperties = {
+const expanderContainer = css({
   ...objectContainer,
   background: colors.expanderBackgroundColor
-}
+});
 
-const expanderTitle: CSSProperties = {
+const expanderTitle = css({
   fontFamily: 'monospace',
   fontSize: '10pt',
-}
+});
 
-export const ObjectContainer = Glamorous.span(objectContainer);
-export const ArrayContainer = Glamorous.span(arrayContainer);
-export const StringContainer = Glamorous.span(valueContainer);
-export const NumberContainer = Glamorous.span(valueContainer);
-export const NullContainer = Glamorous.span(valueContainer);
-export const BooleanContainer = Glamorous.span(valueContainer);
-export const KeyValueContainer = Glamorous.div(keyValueContainer);
-export const ExpanderContainer = Glamorous.div(expanderContainer);
-export const ExpanderTitle = Glamorous.div(expanderTitle);
-export const ExpanderButton: any = Glamorous.div(propStyles({
+export const ObjectContainer = styled.span(objectContainer);
+export const ArrayContainer = styled.span(arrayContainer);
+export const StringContainer = styled.span(valueContainer);
+export const NumberContainer = styled.span(valueContainer);
+export const NullContainer = styled.span(valueContainer);
+export const BooleanContainer = styled.span(valueContainer);
+export const KeyValueContainer = styled.div(keyValueContainer);
+export const ExpanderContainer = styled.div(expanderContainer);
+export const ExpanderTitle = styled.div(expanderTitle);
+export const ExpanderButton: any = styled.div(propStyles({
   expanded: (props: any) => ({...expanderButton, ...(props.expanded ? triangleDown : triangleLeft)})
 }));
 

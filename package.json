@@ -18,31 +18,31 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "glamor": "^2.20.40",
-    "glamorous": "^4.9.7",
-    "ramda": "^0.25.0"
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "ramda": "^0.27.0"
   },
   "peerDependencies": {
     "react": "16.x",
-    "recompose": "^0.26.0"
+    "recompose": "^0.30.0"
   },
   "devDependencies": {
-    "@types/expect": "^1.20.2",
-    "@types/mocha": "^2.2.43",
-    "@types/ramda": "^0.24.16",
-    "@types/react": "^16.0.10",
-    "@types/react-dom": "^16.0.1",
-    "@types/recompose": "^0.24.2",
-    "@types/webpack": "^3.0.13",
-    "awesome-typescript-loader": "^3.2.3",
-    "expect": "^21.2.1",
-    "nwb": "^0.19.0",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^7.0.1",
+    "@types/ramda": "^0.26.42",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/recompose": "^0.30.7",
+    "@types/webpack": "^4.41.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "expect": "^25.1.0",
+    "nwb": "^0.23.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "recompose": "^0.26.0",
-    "typescript": "^2.5.3"
+    "react-dom": "^16.12.0",
+    "recompose": "^0.30.0",
+    "typescript": "^3.8.2"
   },
-  "author": "",
+  "author": "Michael Kruglos",
   "homepage": "",
   "license": "MIT",
   "repository": "",
