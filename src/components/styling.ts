@@ -23,7 +23,7 @@ const valueContainer = css({
   display: "flex",
   padding: '5px 7px',
   margin: '2px',
-  borderRadius: '5px',
+  borderRadius: '3px',
   backgroundColor: colors.valueBackground,
   fontFamily: 'monospace',
   fontSize: '12pt',
@@ -33,21 +33,21 @@ const valueContainer = css({
 const objectContainer = css({
   display: "flex",
   flexDirection: 'column',
-  padding: '1vmin',
+  padding: '2px',
   borderColor: colors.elementBorder,
   borderStyle: 'solid',
   borderWidth: '2px',
-  borderRadius: '5px',
+  borderRadius: '3px',
   backgroundColor: colors.containerBackground,
 });
 
 const arrayContainer = css({
   ...objectContainer,
-  borderRadius: '2px',
+  borderRadius: '3px',
 });
 
 const keyValueContainer = css({
-  borderRadius: 5,
+  borderRadius: '3px',
   borderWidth: 5,
   borderColor: colors.elementBorder,
   display: 'flex',

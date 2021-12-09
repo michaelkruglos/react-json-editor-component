@@ -27,7 +27,6 @@
     "recompose": "^0.30.0"
   },
   "devDependencies": {
-    "@types/expect": "^24.3.0",
     "@types/mocha": "^7.0.1",
     "@types/ramda": "^0.26.42",
     "@types/react": "^16.9.23",
@@ -36,7 +35,7 @@
     "@types/webpack": "^4.41.6",
     "awesome-typescript-loader": "^5.2.1",
     "expect": "^25.1.0",
-    "nwb": "^0.23.0",
+    "nwb": "^0.25.2",
     "react": "^16.0.0",
     "react-dom": "^16.12.0",
     "recompose": "^0.30.0",
@@ -47,6 +46,7 @@
   "license": "MIT",
   "repository": "",
   "keywords": [
-    "react-component"
+    "react-component",
+    "json"
   ]
 }
