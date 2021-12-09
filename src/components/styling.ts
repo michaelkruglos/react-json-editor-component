@@ -27,6 +27,8 @@ const valueContainer = css({
   backgroundColor: colors.valueBackground,
   fontFamily: 'monospace',
   fontSize: '12pt',
+  minHeight: '1em',
+  minWidth: '1em',
   cursor: 'pointer',
 });
 

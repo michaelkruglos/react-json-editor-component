@@ -76,7 +76,9 @@ export class ObjectComponent extends React.Component<ObjectProps, ObjectState> {
   }
 
   toggleAdding() {
-    this.setState({ ...this.state, adding: !this.state.adding });
+    const adding = !this.state.adding;
+    const newKey = "";
+    this.setState({ ...this.state, adding, newKey });
   }
 
   render() {

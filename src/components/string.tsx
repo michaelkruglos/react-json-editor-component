@@ -38,7 +38,7 @@ export class StringComponent extends React.Component<StringProps, StringState> {
     return this.state.editing
       ? <StringContainer>
         <input type="text"
-          value={this.state.input ?? ' '}
+          value={this.state.input}
           onKeyPress={evt => evt.key === "Enter" ? this.apply() : null}
           onChange={evt => this.updateInput(evt.target.value)}
           onBlur={_ => this.apply()}
